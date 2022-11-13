@@ -74,7 +74,7 @@ function ViewTable(props) {
 	function getRows() {
 		setIsLoaded(true);
 		setCols(["First Name", "Last Name", "Email", "Status (Relationship)", "DoB", "Address", "Gender", "Profession", "Relationship Start", "Relationship End"]);
-		setRows([["Alisa", "Aldins", "aaldins0@payments.ex", "current", "1966","22947art", "female", "please", "1990-10", ""], ["BAlisa", "BAldins", "aaldins0@payments.ex", "current", "1966","22947art", "female", "please", "1990-10", ""]]);
+		setRows([["Alisa", "Aldins", "aaldins0@payments.ex", "current", "1966","22947art", "female", "Payment Adustment", "1990-10", ""], ["Regine", "Sprott", "rsprott@gsnail.ex", "current", "1990","2 Starling Alley", "female", "Executive Secretary", "1990-10", ""]]);
 		// const query = 'http://localhost:8080/api/keyspaces/'+keyspace+'/tables/'+table+'/rows'
 		// axios.get(query)
 		// .then(
@@ -252,7 +252,7 @@ function ViewTable(props) {
 			cellRenderer: MoreBtnCellRenderer,
 			cellRendererParams: {
 				clicked: function (field) {
-					setCurrentRow(field);
+					//setCurrentRow(field);
 					handleMoreClickOpen();
 					console.log(field);
 				},

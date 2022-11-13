@@ -4,6 +4,7 @@ import Table from './Table';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 import { useNavigate } from 'react-router-dom';
+import { Box } from '@mui/system';
 
 const theme = createTheme({
     palette: {
@@ -45,8 +46,10 @@ const Dashboard = props => {
     return (
         <ThemeProvider theme={theme} >
             <ThemeProvider theme={theme.typography} >
-                <img src=""></img>
                 <Typography variant="h1" align='center' marginTop={5} marginBottom={3}>
+                    <div>
+                <img margin="auto" display="block" src="https://raw.githubusercontent.com/Vikachubro21/2022-StateFarm-CodingCompetitionFinals/main/ReactApp/public/NewLogo.png" width="20%" height="auto"></img>
+                </div>
                     Welcome!
                 </Typography>
                 <Container align='center'>
