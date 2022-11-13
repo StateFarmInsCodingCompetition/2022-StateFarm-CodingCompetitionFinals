@@ -1,18 +1,17 @@
-# README Template
+# State Farm Coding Competition Finals Submission
 
-## Team Name: <>
 
-* Team Member(s): <>, <>
+## Team Name: Vikas & Joshua
+
+* Team Member(s): Vikas Thoutan, Joshua Das
 
 ## List of Required Software
 
-> Examples: `NodeJS version X` or `Java version Y`
+>  Used: `ReactJS` & `NodeJS`
 
-<>, <>, <>
+
 
 ## How to Run
-
-> List any commands to run your project. For example:
 
 ```sh
 # To get most NodeJS apps to run locally
@@ -22,11 +21,11 @@ npm start
 # OR
 npm run dev
 ```
+## How to use
+* our app allows an agent to log in and view their customer's data and contact information
+* it is meant to be easy to follow so that the agent can have a simple way to view all of their customers important information
 
 ## Known Issues or Bugs
 
-> If there's any known problems with running your app, please list them below.
-
-1. <>
-2. <>
-3. <>
+> Currently, Edit Row does not accept inputs.
+> Backend is incomplete.
