@@ -28,3 +28,4 @@ npm run dev
 ## Known Issues or Bugs
 
 > Currently, Edit Row does not accept inputs.
+> Backend is incomplete.
