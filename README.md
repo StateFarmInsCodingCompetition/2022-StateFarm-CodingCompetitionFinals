@@ -1,14 +1,12 @@
 # README Template
 
-## Team Name: <>
+## Team Name: Levith
 
 * Team Member(s): Levi Bottomley
 
 ## List of Required Software
 
-> Examples: `NodeJS version X` or `Java version Y`
-
-<>, <>, <>
+Python 3
 
 ## How to Run
 
@@ -24,6 +22,6 @@ python app.py
 
 > If there's any known problems with running your app, please list them below.
 
-1. <>
-2. <>
-3. <>
+1. Accordion display does not collapse
+2. Name is not displayed as Accordian header in order to not lose data it was place in the body of the display
+s
