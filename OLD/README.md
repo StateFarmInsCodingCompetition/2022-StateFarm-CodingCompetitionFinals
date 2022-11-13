@@ -2,7 +2,7 @@
 
 ## Team Name: <>
 
-* Team Member(s): Levi Bottomley
+* Team Member(s): <>, <>
 
 ## List of Required Software
 
@@ -16,8 +16,11 @@
 
 ```sh
 # To get most NodeJS apps to run locally
-pip install -r requirements.txt
-python app.py
+npm install
+
+npm start
+# OR
+npm run dev
 ```
 
 ## Known Issues or Bugs
