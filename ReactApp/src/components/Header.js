@@ -1,17 +1,3 @@
-/************************************************************
- * Header.js codes for the formatting and the functionality
- * of the header of the website. Refer to any additional
- * comments for details about the code.
- * 
- * Written by Tony Dong, Athulya Saravanakumar, Sophia Phu,
- * Rishindra Davuluri, Tommy Fang, Suhani Goswami,
- * Nitya Pakala, and Tejas Kalpathi.
- *
- * Big thanks to Vikas Thoutam for technical support.
- * 
- * Last updated: 8/3/2022
- ***********************************************************/
-
 import * as React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -71,7 +57,7 @@ function Header(props) {
         <AppBar position="static">
             <Toolbar variant="dense" disableGutters>
                 <ThemeProvider theme={theme}>
-                    <Button href="/" sx={{ ml: '15px', mr: "52%" }}>
+                    <Button href="/" sx={{ ml: '15px', mr: "60%" }}>
                         <Box
                             component="img"
                             sx={{
@@ -84,41 +70,6 @@ function Header(props) {
                     </Button>
                     {props.loginStatus &&
                         <Stack direction='row'>
-                            <Button color='inherit' id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
-                                <Typography variant="sidenav" color="inherit" component="div" align='center' sx={{}}>
-                                    <Box fontWeight="700" sx={{ width: '.5 rem' }}>
-                                        Dashboard
-                                    </Box>
-                                </Typography>
-                            </Button>
-                            <Menu
-                            sx={{
-                                align: "right",
-                            }}
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
-                            MenuListProps={{
-                                'aria-labelledby': 'basic-button',
-                            }}
-                            >
-                                <MenuItem onClick={handleClose}>
-                                    <Button href="/" sx={{ fontWeight: 'bold', fontFamily: ['Open Sans', 'sans-serif'].join(',') }}>
-                                        View Dashboard
-                                    </Button>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <Button href="/keyspaces" sx={{ fontWeight: 'bold', fontFamily: ['Open Sans', 'sans-serif'].join(',') }}>
-                                        Data Center
-                                    </Button>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <Button href="/cluster" sx={{ fontWeight: 'bold', fontFamily: ['Open Sans', 'sans-serif'].join(',') }}>
-                                        Cluster Info
-                                    </Button>
-                                </MenuItem>
-                            </Menu>                
                             <Button
                                 href="/"
                                 onClick={() => {

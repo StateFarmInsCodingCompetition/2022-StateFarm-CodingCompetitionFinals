@@ -1,18 +1,6 @@
-/************************************************************
- * Dashboard.js codes for the dashboard of the website. Refer
- * to any additional comments for details about the code.
- * 
- * Written by Tony Dong, Athulya Saravanakumar, Sophia Phu,
- * Rishindra Davuluri, Tommy Fang, Suhani Goswami,
- * Nitya Pakala, and Tejas Kalpathi.
- *
- * Big thanks to Vikas Thoutam for technical support.
- * 
- * Last updated: 8/3/2022
- ***********************************************************/
-
 import { React } from 'react';
 import { Grid, Paper, Button, Typography, Container } from '@mui/material';
+import Table from './Table';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 import { useNavigate } from 'react-router-dom';
@@ -57,6 +45,7 @@ const Dashboard = props => {
     return (
         <ThemeProvider theme={theme} >
             <ThemeProvider theme={theme.typography} >
+                <img src=""></img>
                 <Typography variant="h1" align='center' marginTop={5} marginBottom={3}>
                     Welcome!
                 </Typography>
@@ -64,6 +53,9 @@ const Dashboard = props => {
                     <Typography variant="textbody" align='center'>
                         This is your dashboard.
                     </Typography>
+                </Container>
+                <Container align='center'>
+                    <Table></Table>
                 </Container>
             </ThemeProvider>
             {/* <Grid sx = {{mt: '-15px'}}>
