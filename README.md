@@ -7,7 +7,7 @@
 
 ## List of Required Software
 
->  Used: `ReactJS` & `AGgrid`
+>  Used: `ReactJS` & `NodeJS`
 
 
 
